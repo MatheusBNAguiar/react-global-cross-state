@@ -1,3 +1,3 @@
-export function TestSetup(text: string){
-console.log(text)
+export function TestSetup(text: string): void {
+  console.log(text)
 }
