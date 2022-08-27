@@ -21,10 +21,15 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c && tsc",
-    "prepare": "husky install",
     "lint:fix": "eslint ./ --fix",
+    "prepare": "husky install",
     "prettier": "prettier --write .",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "nanoid": "^4.0.0",
+    "react": "^18.2.0",
+    "use-sync-external-store": "^1.2.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.35.1",

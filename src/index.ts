@@ -1,3 +1,2 @@
-export function TestSetup(text: string): void {
-  console.log(text)
-}
+export { useGlobalStoreValue, useSetGlobalStore, useGlobalStore } from './hooks'
+export { createGlobalStore } from './store'
