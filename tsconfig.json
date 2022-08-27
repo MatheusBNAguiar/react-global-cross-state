@@ -1,11 +1,12 @@
 {
-  'compilerOptions': {
-    'outDir': 'dist',
-    'target': 'esnext',
-    'module': 'commonjs',
-    'strict': true,
-    'esModuleInterop': true,
-    'skipLibCheck': true,
-    'forceConsistentCasingInFileNames': true
+  "compilerOptions": {
+    "outDir": "dist/esm",
+    "target": "esnext",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node"
   }
 }
