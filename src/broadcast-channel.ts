@@ -1,4 +1,3 @@
-import { nanoid } from 'nanoid'
 
 interface EventMap {
   [key: string]: (...args: any[]) => void
@@ -21,7 +20,7 @@ type BroadcastChannelListener<
 export function BroadcastChannel<Events extends EventMap>(channelName: string) {
   type EventKeys = Extract<keyof Events, string>
 
-  const sourceId = nanoid()
+  const sourceId = 'aha'
   const channel = new window.BroadcastChannel(channelName)
 
   function listen(listener: BroadcastChannelListener<Events, EventKeys>) {
